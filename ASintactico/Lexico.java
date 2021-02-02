@@ -17,7 +17,7 @@ public class Lexico {
 	
 	public Lexico(String cadena) {
 		if(cadena.equals("")) {
-			System.out.println("Cadena vacÌa");
+			System.out.println("Cadena vac√≠a");
 		}else{
 			cadena=cadena+" $";
 			cadena=cadena.trim();
@@ -44,22 +44,21 @@ public class Lexico {
                     matched = true;
                     lexema.add(tk.getTipo());
                     valor.add(tk.getValor());
-                    //System.out.println("(" + tk.getTipo() + ": " + tk.getValor() + ")");
                 }
             }
 
             if (!matched) {
-                System.out.println("Se encontrÛ un token invalido: " + palabra);
+                System.out.println("Se encontr√≥ un token invalido: " + palabra);
                 ban_seguir=false;
             }
         }
         if(ban_seguir) {
         	asignaTipo();
         	tablaSimbolos();
-        	System.out.println("\nAn·lisis lÈxico terminado exitosamente\n");
+        	System.out.println("\nAn√°lisis l√©xico terminado exitosamente\n");
         	Sintactico sintac = new Sintactico();
         }else {
-        	System.out.println("\nAn·lisis lÈxico terminado con errores");
+        	System.out.println("\nAn√°lisis l√©xico terminado con errores");
         	System.exit(0);
         }
     }
