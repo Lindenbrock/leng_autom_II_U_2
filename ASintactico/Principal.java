@@ -14,9 +14,6 @@ public class Principal {
 		
 		System.out.println("Escriba la cadena a analizar");
 		string=lee.readLine();
-		
-		/*Principal pl= new Principal();
-		pl.start(string);*/
 		Lexico lx = new Lexico(string);
 		
 	}
