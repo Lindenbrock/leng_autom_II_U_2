@@ -69,7 +69,7 @@ public class Sintactico {
 				 	 	   				 						  if(edo_proc.equals("P16"))
 				 	 	   				 							  reduceP(2,"F");
 				 	 	   				 						  else if(edo_proc.equals("")) {
-				 	 	   				 							  	   System.out.println("Error sintáctico");
+				 	 	   				 							  	   System.out.println("Error sintÃ¡ctico");
 				 	 	   				 							  	   ban_proc=true;
 				 	 	   				 						  	   } else {
 				 	 	   				 						  		   	if(p_ent.size()>2) {
@@ -88,10 +88,10 @@ public class Sintactico {
 		}while(ban_proc==false);
 		//System.out.println(cad_sem);
 		if(p_ent.size()==1) {
-			System.out.println("\nAnalisis sintáctico terminado exitosamente\n");
+			System.out.println("\nAnalisis sintÃ¡ctico terminado exitosamente\n");
 			Semantico sm = new Semantico();
 		} else {
-			System.out.println("\nAnálisis sintáctico terminado con errores\n");
+			System.out.println("\nAnÃ¡lisis sintÃ¡ctico terminado con errores\n");
 			System.exit(0);
 		}
 	}
@@ -122,7 +122,6 @@ public class Sintactico {
 		if(ban_sem) {
 			pos=type.size()-(p_ent.size());
 			String t=type.get(pos);
-			//if(t.equals("int") || t.equals("float") || t.equals("char") || t.equals("sd")) {
 			cad_sem.add(t);			
 		}		
 	}
