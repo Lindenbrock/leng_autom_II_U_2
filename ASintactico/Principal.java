@@ -21,10 +21,4 @@ public class Principal {
 		
 	}
 	
-	/*public void start(String cadena) throws IOException {
-		 
-	}*/
-	
-	
-	
 }
