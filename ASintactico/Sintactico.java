@@ -86,7 +86,6 @@ public class Sintactico {
 			if(p_ent.isEmpty())
 				ban_proc=true;
 		}while(ban_proc==false);
-		//System.out.println(cad_sem);
 		if(p_ent.size()==1) {
 			System.out.println("\nAnalisis sintáctico terminado exitosamente\n");
 			Semantico sm = new Semantico();
